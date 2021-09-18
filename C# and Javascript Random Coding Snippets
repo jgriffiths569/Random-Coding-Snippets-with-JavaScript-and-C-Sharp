@@ -1,0 +1,43 @@
+//javascript, create redirectable dropdown menu in the Wix API
+import wixLocation from 'wix-location';
+
+$w.onReady(function () {
+  //TODO: write your page related code here...
+
+  $w("#yourdropdownname").options = [
+    {"label": "About Me", "value": "https://loganphilthephilos.wixsite.com/mysite-1"},
+    {"label": "My Shop", "value": "https://loganphilthephilos.wixsite.com/mysite-1/the-east-coast-journal"},
+    {"label": "Journal #1", "value": "https://loganphilthephilos.wixsite.com/mysite-1/my-store"}
+  ];
+
+
+});
+
+export function dropdown2_change(event) {
+	let gotoUrl = $w("#yourdropdownname").value;
+	wixLocation.to(gotoUrl);
+}
+
+//C# create a list where you can select items
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp13
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<int> a = new List<int>() { 1, 2, 3, 4, 5 };
+            for (int i = 0; i <= a.Count; i = i + 1)
+            {
+                Console.Write(a[i]);
+            }
+            Console.ReadKey();
+
+        }
+    }
+}
