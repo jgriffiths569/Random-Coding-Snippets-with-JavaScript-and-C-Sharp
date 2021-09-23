@@ -1,13 +1,13 @@
-//javascript, create redirectable dropdown menu in the Wix API
+//javascript, create a dropdown menu that can redirect users to sites in the Wix API
 import wixLocation from 'wix-location';
 
 $w.onReady(function () {
   //TODO: write your page related code here...
 
   $w("#yourdropdownname").options = [
-    {"label": "About Me", "value": "https://loganphilthephilos.wixsite.com/mysite-1"},
-    {"label": "My Shop", "value": "https://loganphilthephilos.wixsite.com/mysite-1/the-east-coast-journal"},
-    {"label": "Journal #1", "value": "https://loganphilthephilos.wixsite.com/mysite-1/my-store"}
+    {"label": "insert title", "value": "insert site"},
+    {"label": "insert title", "value": "insert site"},
+    {"label": "insert title", "value": "insert site"}
   ];
 
 
@@ -21,7 +21,7 @@ export function dropdown2_change(event) {
 
 
 
-//C# create a list where you can select items
+//C# - create a list where you can select items
 using System;
 using System.Collections.Generic;
 using System.Linq;
