@@ -5,9 +5,9 @@ $w.onReady(function () {
   //TODO: write your page related code here...
 
   $w("#yourdropdownname").options = [
-    {"label": "insert title", "value": "insert site"},
-    {"label": "insert title", "value": "insert site"},
-    {"label": "insert title", "value": "insert site"}
+    {"label": "insert title", "value": "insert site URL"},
+    {"label": "insert title", "value": "insert site URL"},
+    {"label": "insert title", "value": "insert site URL"}
   ];
 
 
